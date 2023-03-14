@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>ChatGPT application</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="talk-to-me">Talk To Me !</h1>
+        <div class="answer-content">
+            <input type="text" id="answer">
+            <button onclick="handleClick()">Send</button>
+        </div>
+        <div class="reply">
+            <div class="reply-content" id="reply-content">
+            
+            </div>
+            <div id="loading">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0F9E7B;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+.container{
+    width: 100%;
+    max-width: 380px;
+}
+@media (min-width: 700px) {
+    .container{
+        max-width: 600px;
+    }
+    
+}
+.talk-to-me{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 3rem;
+}
+.answer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.answer-content input{
+    flex: 4;
+    padding: 13px;
+    margin-right: 5px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: aliceblue;
+}
+.answer-content input:focus{
+    outline: none;
+}
+.answer-content button{
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    color: #0F9E7B;
+    font-weight: 600;
+    background-color: aliceblue;
+}
+.reply{
+    position: relative;
+    width: 100%;
+    word-break: break-all;
+}
+.reply-content{
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    line-height: 1.8;
+}
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #0F9E7B;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #0F9E7B transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
